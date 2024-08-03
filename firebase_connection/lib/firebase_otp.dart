@@ -30,6 +30,7 @@ class _OTPScreenState extends State<OTPScreen> {
           content: Text("Failed to verify phone number"),
         ));
       },
+      
       codeSent: (String verificationId, int? resendToken) {
         setState(() {
           _verificationId = verificationId;
